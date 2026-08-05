@@ -201,7 +201,7 @@ a {
 
 /* Alt başlık (Unvan) - Görsel ayrım artırıldı */
 .hero h2 {
-    margin-top: 12px;
+    margin-top: 6px;
     font-size: clamp(1.1rem, 1.8vw, 1.35rem);
     color: var(--accent-subtle);
     font-weight: 500;
@@ -324,9 +324,9 @@ a {
 
 /* Alt başlık (Unvan) */
 .hero h2 {
-    margin-top: 16px;
+    margin-top: 6px;
     font-size: clamp(1.1rem, 1.8vw, 1.35rem);
-    color: var(--muted);
+    color: var(--accent-subtle);
     font-weight: 500;
 }
 
