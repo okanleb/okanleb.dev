@@ -10,7 +10,10 @@ import Layout from "../layouts/Layout.astro";
         <h2>Senior Mainframe System Engineer</h2>
         
         <p>
-          Designing reliable IBM Mainframe solutions through&nbsp;<span class="accent">automation</span>,&nbsp;<span class="accent">simplicity</span>,&nbsp;and&nbsp;<span class="accent">Everything-as-Code</span>.
+          Designing reliable IBM Mainframe solutions through 
+          <span class="accent">automation</span>, 
+          <span class="accent">simplicity</span>, and 
+          <span class="accent">Everything-as-Code</span>.
         </p>
 
         <div class="actions">
