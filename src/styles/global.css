@@ -403,3 +403,97 @@ a {
         padding: 6px 0;
     }
 }
+/* Bio & Expertise Section */
+.bio-section {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08); /* Hafif ayırıcı çizgi */
+}
+
+.bio-text {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 720px;
+}
+
+/* Code/Terminal Style Card */
+.expertise-card {
+    background: rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+.card-header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-header .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.dot.red { background: #ef4444; }
+.dot.yellow { background: #f59e0b; }
+.dot.green { background: #10b981; }
+
+.card-title {
+    font-size: 0.8rem;
+    font-family: monospace;
+    color: var(--muted);
+    margin-left: 8px;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skill-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-subtle); /* Turuncu vurgumuz */
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 450;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    border-color: var(--accent-subtle);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.2); /* Turuncu hafif parlama */
+    transform: translateY(-1px);
+}
