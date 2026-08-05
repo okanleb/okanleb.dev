@@ -5,7 +5,7 @@
     --muted: #94a3b8;
     --accent: #3b82f6;
     --accent-hover: #2563eb;
-    --accent-subtle: #60a5fa; 
+    --accent-subtle: #f59e0b; 
     --max-width: 1100px;
 }
 
@@ -74,7 +74,7 @@ a {
 
 /* Alt başlık (Unvan) */
 .hero h2 {
-    margin-top: 12px;
+    margin-top: 6px;
     font-size: clamp(1.1rem, 1.8vw, 1.35rem);
     color: var(--accent-subtle);
     font-weight: 500;
