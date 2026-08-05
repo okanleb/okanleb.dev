@@ -1,187 +1,126 @@
-:root{
-
-    --bg:#0b1120;
-    --surface:#111827;
-
-    --text:#f8fafc;
-    --muted:#94a3b8;
-
-    --accent:#3b82f6;
-
-    --max-width:1100px;
-
+:root {
+    --bg: #0b1120;
+    --surface: #111827;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --max-width: 1100px;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-
-    scroll-behavior:smooth;
-
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-
-    background:var(--bg);
-
-    color:var(--text);
-
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-
-    line-height:1.6;
-
-    -webkit-font-smoothing:antialiased;
-
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-a{
-
-    color:inherit;
-    text-decoration:none;
-
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-img{
-
-    max-width:100%;
-    display:block;
-
+.container {
+    width: min(var(--max-width), 92%);
+    margin: auto;
 }
 
-.container{
-
-    width:min(var(--max-width),92%);
-    margin:auto;
-
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
+.hero-content {
+    max-width: 760px;
 }
 
-.hero-content{
-
-    max-width:760px;
-
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
-.hero h1{
-
-    font-size:clamp(3rem,7vw,5rem);
-
-    line-height:1;
-
-    font-weight:700;
-
+.hero h2 {
+    margin-top: 20px;
+    font-size: clamp(1.25rem, 2vw, 1.6rem);
+    color: var(--muted);
+    font-weight: 500;
 }
 
-.hero h2{
-
-    margin-top:24px;
-
-    font-size:clamp(1.25rem,2vw,1.6rem);
-
-    color:var(--muted);
-
-    font-weight:500;
-
+.hero p {
+    margin-top: 32px;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.7;
+    color: #e2e8f0;
 }
 
-.hero p{
-
-    margin-top:40px;
-
-    font-size:clamp(1.1rem,2vw,1.4rem);
-
-    line-height:1.7;
-
-    max-width:700px;
-
+.accent {
+    color: var(--accent);
+    font-weight: 600;
 }
 
-.accent{
-
-    color:var(--accent);
-
+.actions {
+    margin-top: 48px;
+    display: flex;
+    align-items: center; /* Linkler ile butonu dikeyde tam ortalar */
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
-.actions{
-
-    margin-top:56px;
-
-    display:flex;
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
+.button {
+    background: var(--accent);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.button{
-
-    background:var(--accent);
-
-    color:white;
-
-    padding:14px 24px;
-
-    border-radius:10px;
-
-    font-weight:600;
-
-    transition:.25s;
-
+.button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
 }
 
-.button:hover{
-
-    transform:translateY(-2px);
-
+.link {
+    color: var(--muted);
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-.link{
-
-    color:var(--muted);
-
-    font-weight:500;
-
+.link:hover {
+    color: var(--text);
 }
 
-.link:hover{
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
 
-    color:white;
-
-}
-
-@media (max-width:768px){
-
-.hero{
-
-padding:80px 0;
-
-}
-
-.actions{
-
-flex-direction:column;
-
-align-items:flex-start;
-
-}
-
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+    
+    .link {
+        text-align: center;
+        padding: 8px 0;
+    }
 }
