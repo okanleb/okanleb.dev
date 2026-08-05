@@ -1,0 +1,13 @@
+services:
+  website:
+    build: .
+    container_name: website
+
+    restart: unless-stopped
+
+    ports:
+      - "4321:4321"
+
+    volumes:
+      - .:/app
+      - /app/node_modules
