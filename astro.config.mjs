@@ -5,4 +5,9 @@ export default defineConfig({
     host: true,
     allowedHosts: ['okanleb.dev'],
   },
+
+    devToolbar: {
+        enabled: false,
+  },
+
 });
